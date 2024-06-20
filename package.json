@@ -1,0 +1,19 @@
+{
+  "name": "dworker-weapp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@vant/weapp": "^1.11.6",
+    "dayjs": "^1.11.11",
+    "qrcode-generator": "^1.4.4",
+    "throttle-debounce": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/throttle-debounce": "^5.0.0",
+    "miniprogram-api-typings": "^3.12.2"
+  }
+}

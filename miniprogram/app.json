@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/clock-work/clock-work",
+    "pages/user/bind-phone/bind-phone",
+    "pages/user/register/register",
+    "pages/workspace/main/main",
+    "pages/workspace/index/index",
+    "pages/project/list/list",
+    "pages/project/detail/detail",
+    "pages/project/guide/guide",
+    "pages/project/choice-type/choice-type",
+    "pages/project/create/create",
+    "pages/project/document/document",
+    "pages/project/add-address/add-address",
+    "pages/member/create/create",
+    "pages/member/detail/detail",
+    "pages/job/select/select",
+    "pages/job/create/create",
+    "pages/company/create/create",
+    "pages/company/verify/verify",
+    "pages/company/legal-master/legal-master",
+    "pages/company/upload-certificate/upload-certificate",
+    "pages/company/base-info/base-info",
+    "pages/message/message",
+    "pages/my/todo-list/todo-list",
+    "pages/my/zone/zone",
+    "pages/my/todo-detail/todo-detail",
+    "pages/my/joined/joined",
+    "pages/my/company-list/company-list",
+    "pages/my/qrcode/qrcode"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/clock-work/clock-work",
+        "text": "打卡",
+        "iconPath": "images/tabbar/history.png",
+        "selectedIconPath": "images/tabbar/history_s.png"
+      },
+      {
+        "pagePath": "pages/workspace/index/index",
+        "text": "工作台",
+        "iconPath": "images/tabbar/setting.png",
+        "selectedIconPath": "images/tabbar/setting_s.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/tabbar/setting.png",
+        "selectedIconPath": "images/tabbar/setting_s.png"
+      },
+      {
+        "pagePath": "pages/my/zone/zone",
+        "text": "我的",
+        "iconPath": "images/tabbar/setting.png",
+        "selectedIconPath": "images/tabbar/setting_s.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "从业平台",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-empty": "@vant/weapp/empty/index"
+  },
+  "lazyCodeLoading": "requiredComponents"
+}

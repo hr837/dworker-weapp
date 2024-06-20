@@ -1,0 +1,41 @@
+<!--pages/workspace/index/index.wxml-->
+<view class="page index">
+  <view class="index__top">
+    <view class="index__company">
+      <text class="index__company__name">安天下信息科技有限公司</text>
+      <view class="index__company__switch">
+        切换
+        <van-icon custom-class="index__company__switch__icon" name="sort" />
+      </view>
+    </view>
+  </view>
+  <view class="index__middle">
+    <view class="index__quick">
+      <view class="index__quick__entry">
+        <van-icon name="add-o" />
+        创建企业
+      </view>
+      <view class="index__quick__splitline"></view>
+      <view class="index__quick__entry">
+        <van-icon name="scan" />
+        扫一扫
+      </view>
+    </view>
+
+  </view>
+
+  <van-grid>
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+  </van-grid>
+
+  <!-- 个人信息认证提示 -->
+  <view class="auth-reminder">
+    您的个人信息暂未认证，请立即认证
+    <!-- 认证按钮 -->
+    <van-button type="primary" class="auth-button" size="mini" round>认证</van-button>
+  </view>
+
+
+</view>

@@ -1,0 +1,5 @@
+<!--components/to-top/to-top.wxml-->
+<cover-view wx:if="{{show}}" class="component to-top" bindtap="gotoTop">
+  <van-icon name="arrow-up" color="#fefefe" />
+  <cover-view class="to-top_text">TOP</cover-view>
+</cover-view>

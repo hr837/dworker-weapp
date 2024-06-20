@@ -1,0 +1,5 @@
+<!--components/page-loader/page-loader.wml-->
+<view class="component page-loader">
+  <van-loading wx:if="{{loading}}" type="spinner" color="#1989fa" size="32rpx">加载中...</van-loading>
+  <van-divider wx:else contentPosition="center">{{moreText}}</van-divider>
+</view>

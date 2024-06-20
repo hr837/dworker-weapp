@@ -1,0 +1,70 @@
+/* pages/workspace/index/index.wxss */
+
+.index {
+  &__top {
+    padding: 64rpx 32rpx 108rpx;
+    background-color: var(--primary-color);
+  }
+
+  &__company {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    &__name {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    &__switch {
+      &__icon {
+        margin-left: 16rpx;
+        rotate: 90deg;
+      }
+    }
+  }
+
+  &__middle {
+    height: 96rpx;
+    background-color: #ebebeb;
+    position: relative;
+  }
+
+
+  &__quick {
+    width: 90%;
+    max-width: 750rpx;
+    padding: 24rpx;
+    display: flex;
+    border-radius: 18rpx;
+    overflow: hidden;
+    height: 96rpx;
+    align-items: center;
+    position: absolute;
+    top: -48rpx;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__splitline {
+      width: 1px;
+      height: 100%;
+      background-color: #ccc;
+    }
+
+    &__entry {
+      flex: 1;
+      text-align: center;
+
+      .van-icon {
+        color: var(--primary-color);
+        font-weight: bold;
+        margin-right: 12rpx;
+      }
+    }
+
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+}

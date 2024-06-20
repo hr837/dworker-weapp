@@ -1,0 +1,41 @@
+/**app.wxss**/
+@import "./assets/iconfont";
+
+page {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei',
+    sans-serif;
+  padding: 0;
+  margin: 0;
+  --primary-color: #1989fa;  /*vant 官网主题色*/
+  --button-primary-background-color: var(--primary-color);
+  --button-primary-border-color:  var(--primary-color);
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.fixed_button {
+  z-index: 1;
+  position: fixed;
+  top: 300rpx;
+  right: 32rpx;
+
+  border: solid 1rpx rgb(228, 228, 228);
+  border-radius: 8rpx;
+  padding: 8rpx 16rpx;
+  text-align: center;
+  background-color: rgba(250, 250, 250,0.8);
+
+  &__img {
+    width: 72rpx;
+    height: 72rpx;
+  }
+
+  &__text {
+    font-size: 0.8em;
+  }
+}
+

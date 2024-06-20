@@ -1,0 +1,15 @@
+/**
+ * 格式化服务端返回的时间字符串
+ * @param str {string} 要格式化的内容
+ */
+function dateFormat(str) {
+  var fmtVal = '';
+  if (!str) return fmtVal;
+  var vals = str.split('T');
+  if (vals.length != 2) return fmtVal;
+  return vals.join(' ');
+}
+
+module.exports = {
+  dateFormat: dateFormat
+}
