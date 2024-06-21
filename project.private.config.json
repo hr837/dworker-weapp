@@ -11,7 +11,7 @@
       "list": [
         {
           "name": "index",
-          "pathName": "pages/user/bind-phone/bind-phone",
+          "pathName": "pages/workspace/index/index",
           "query": "",
           "launchMode": "default",
           "scene": null

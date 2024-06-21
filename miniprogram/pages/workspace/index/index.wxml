@@ -11,31 +11,28 @@
   </view>
   <view class="index__middle">
     <view class="index__quick">
-      <view class="index__quick__entry">
-        <van-icon name="add-o" />
+      <van-button class="index__quick__entry" icon="add-o" block bind:click="onCreateCompany">
         创建企业
-      </view>
+      </van-button>
       <view class="index__quick__splitline"></view>
-      <view class="index__quick__entry">
-        <van-icon name="scan" />
+      <van-button class="index__quick__entry" icon="scan" block bind:click="onCreateCompany">
         扫一扫
-      </view>
+      </van-button>
     </view>
 
   </view>
 
-  <van-grid>
-    <van-grid-item icon="photo-o" text="文字" />
-    <van-grid-item icon="photo-o" text="文字" />
-    <van-grid-item icon="photo-o" text="文字" />
-  </van-grid>
 
-  <!-- 个人信息认证提示 -->
-  <view class="auth-reminder">
-    您的个人信息暂未认证，请立即认证
-    <!-- 认证按钮 -->
-    <van-button type="primary" class="auth-button" size="mini" round>认证</van-button>
+  <view class="index__apps">
+    <van-grid border="{{false}}" clickable icon-size="28px">
+      <van-grid-item icon-prefix="iconfont" icon-class="index__app--project" icon="project" text="我的项目" />
+      <van-grid-item icon-prefix="iconfont" icon="custom-user" icon-class="index__app--todo" text="我的待办" />
+      <van-grid-item icon-prefix="iconfont" icon="project-new" icon-class="index__app--project-new" text="新建项目" />
+    </van-grid>
   </view>
 
 
+  <van-notice-bar custom-class="index__notice" left-icon="volume-o" text="您的个人信息暂未认证，请立即认证">
+    <van-button type="primary" slot="right-icon" class="auth-button" size="mini" round>认证</van-button>
+  </van-notice-bar>
 </view>

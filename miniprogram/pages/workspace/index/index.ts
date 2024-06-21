@@ -67,8 +67,9 @@ Page({
   onSwitch: function(event) {
     // 切换逻辑
   },
-  onCreateCompany: function(event) {
-    // 创建企业的逻辑
+  // 创建企业的逻辑
+  onCreateCompany: function() {
+    wx.navigateTo({url:"/pages/company/create/create"})
   },
   onScan: function(event) {
     // 扫一扫的逻辑
